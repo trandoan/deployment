@@ -1,0 +1,12 @@
+appa:
+  image: 172.28.128.4:5000/techcon/app-a:3.0.0
+  ports:
+    - "8181:8080"
+appb:
+  image: 172.28.128.4:5000/techcon/app-b:2.0.0
+  ports:
+    - "8282:8080"
+appc:
+  image: 172.28.128.4:5000/techcon/app-a:1.0.0
+  ports:
+    - "8383:8080"
