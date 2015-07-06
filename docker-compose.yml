@@ -3,16 +3,18 @@ appa:
   ports:
     - "8181:8080"
   working_dir: /opt
-  command: java -jar appA-*.jar
+  command: ./appA
+
 appb:
   image: 172.28.128.4:5000/techcon/app-b:2.0.0
   ports:
     - "8282:8080"
   working_dir: /opt
-  command: java -jar appB-*.jar
+  command: ./appB
+
 appc:
   image: 172.28.128.4:5000/techcon/app-c:1.0.0
   ports:
     - "8383:8080"
   working_dir: /opt
-  command: java -jar appC-*.jar
+  command: ./appC
